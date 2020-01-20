@@ -60,7 +60,7 @@ gulp.task('sass:optimized', function() {
     .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('sass', ['sass:lint', 'sass:build']);
+gulp.task('sass', ['sass:build']);
 
 gulp.task('js:build', function() {
   return gulp.src('src/js/**/*.js')
