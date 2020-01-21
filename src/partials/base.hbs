@@ -49,18 +49,222 @@
     <!-- Chrome Theme Color -->
     <meta name="theme-color" content="{{ meta.theme_color }}">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,600,700,800,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/css/style.min.css" inline>
-    <!-- Google Analytics go here -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ meta.google_analytics_id }}', 'auto');
-        ga('send', 'pageview');
-    </script>
+    
 </head>
-<body>
-    {{#block "main"}}{{/block}}
+<body class="page-template page-template-page-about page-template-page-about-php page page-id-10 cookies-set cookies-accepted">
+        <div id="global-wrapper" class="full-width-wrapper">
+            <div id="content-outer-wrapper" class="full-width-wrapper">
+
+                <div class="page-bout-body page-blog-body">
+                    <div class="gigster-section gigster-section1">
+                        <div class="gigster-header full-width-wrapper">
+                            <div class="centered-wrapper">
+                                <a class="gigster-header-menu-trigger" href="javascript:;" title="Menu">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                </a>
+                                <h2 class="gigster-header-logo"><a href="https://gigster.com/"></a></h2>
+                                <a class="form-trigger-btn desktop" target="_blank" href="https://boards.greenhouse.io/gigster30" title="apply now">apply now<span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                                <a class="form-trigger-btn mobile" target="_blank" href="https://boards.greenhouse.io/gigster30" title="apply">apply<span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                            </div>
+                        </div>
+                        {{!-- <div class="gigster-table">
+                            <div class="gigster-table-cell">
+                                <div class="gigster-text">
+                                    <div class="bg-graphic"><img src="https://gigster.com/wp-content/themes/gigster/assets/images/about/s1_gA.svg" /></div>
+                                    <div class="gigster-title">about</div>
+                                    gigster helps more companies expand their ability to innovate by building dynamic teams made up of top global talent that create industry-changing custom software.
+                                </div>
+                            </div>
+                        </div> --}}
+                    </div>
+
+                    <div class="blog-content">
+                        <aside class="blog-menu-sidebar">
+                            <nav class="blog-category-nav">
+                                <ul class="blog-categories">
+                                    <li class="blog-categories__item main"><a href="#">Thought leadership</a></li>
+                                    <li class="blog-categories__item"><a href="#">Gig Economy</a></li>
+                                    <li class="blog-categories__item active"><a href="#">Future of Work</a></li>
+                                    <li class="blog-categories__item"><a href="#">Culture of Innovation</a></li>
+                                    <li class="blog-categories__item"><a href="#">Technology</a></li>
+                                    <li class="blog-categories__item"><a href="#">Modern Teams</a></li>
+                                </ul>
+                            </nav>
+                            
+                        </aside>
+                        <aside class="blog-posts-sidebar">
+                            <section class="blog-search">
+                                <form method="get" id="searchform" action="" role="search">
+                                    <input type="text" name="s" id="s" value="Search blog">
+                                    <button type="submit"><i class="icomoon-search"></i></button>
+                                </form>
+                            </section>
+                            <section class="blog-popular-posts">
+                                <h3>Most popular</h3>
+                                <p>here go posts</p>
+                            </section>
+                        </aside>
+                        <main class="blog-main">
+                            {{#block "main"}}{{/block}}
+
+                                        </main>
+                                    </div>
+
+                                    <div class="gigster-section gigster-section-footer">
+                                        <div class="gigster-table">
+                                            <div class="gigster-table-cell">
+                                                <div class="gigster-footer">
+                                                    <ul>
+                                                        <li>
+                                                            <img class="footer-logo" src="https://gigster.com/wp-content/themes/gigster/assets/images/gigster_logo.svg" />
+                                                        </li>
+                                                        <li>
+                                                            <ul class="gigster-footer-social-list menu">
+                                                                <ul id="page-footer-wp-menu" class="menu">
+                                                                    <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-57"><a href="https://gigster.com/">Home</a></li>
+                                                                    <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-21"><a href="https://gigster.com/about/" aria-current="page">About</a></li>
+                                                                    <li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://gigster.com/talent/">Talent</a></li>
+                                                                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://gigster.com/blog/">Blog</a></li>
+                                                                </ul>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <div class="gigster-footer-contact-info">
+                                                                301 Howard Street
+                                                                <br /> Suite 2100
+                                                                <br /> San Francisco, CA 94105
+                                                                <br /> USA
+                                                                <br /> +1-833-GIGSTER
+                                                                <br />
+                                                                <a href="mailto:info@gigster.com">info@gigster.com</a>
+                                                                <br />
+                                                                <br />
+                                                                <a id="privacy-policy-link" href="privacy">Privacy Policy</a> </div>
+                                                        </li>
+                                                        <li>
+                                                            <a class="form-trigger-btn" target="_blank" href="https://boards.greenhouse.io/gigster30" title="apply now">apply now<span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- POPUPS -->
+
+                                <div class="theme-modal" id="popup-form-container">
+                                    <a href="#" class="close-theme-modal"><img src="https://gigster.com/wp-content/themes/gigster/assets/images/form_close.svg"></a>
+                                    <div id="custom-from-container"></div>
+                                </div>
+
+                                <div class="theme-modal" id="popup-menu-container">
+                                    <a href="#" class="close-theme-modal"><img src="https://gigster.com/wp-content/themes/gigster/assets/images/form_close.svg"></a>
+                                    <div class="desktop">
+                                        <div class="popup-menu-body">
+                                            <div class="gigster-table">
+                                                <div class="gigster-table-cell">
+                                                    <div class="gigster-popupmenu-wrapper">
+                                                        <ul id="menu-top-menu" class="menu">
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-57"><a href="https://gigster.com/">Home</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-21"><a href="https://gigster.com/about/" aria-current="page">About</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://gigster.com/talent/">Talent</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://gigster.com/blog/">Blog</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gigster-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="footer-logo" src="https://gigster.com/wp-content/themes/gigster/assets/images/gigster_logo.svg" />
+                                                </li>
+                                                <li>
+                                                    <ul class="gigster-footer-social-list">
+                                                        <li><a target="_blank" href="https://twitter.com/trygigster">Twitter<img src="https://gigster.com/wp-content/themes/gigster/assets/images/social-arrow.svg"/></a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/company/gigster">LinkedIn<img src="https://gigster.com/wp-content/themes/gigster/assets/images/social-arrow.svg"/></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <div class="gigster-footer-contact-info">
+                                                        301 Howard Street
+                                                        <br /> Suite 2100
+                                                        <br /> San Francisco, CA 94105
+                                                        <br /> USA
+                                                        <br /> +1-833-GIGSTER
+                                                        <br />
+                                                        <a href="mailto:info@gigster.com">info@gigster.com</a>
+                                                        <br />
+                                                        <br />
+                                                        <a id="privacy-policy-link" href="privacy">Privacy Policy</a> </div>
+                                                </li>
+                                                <li>
+                                                    <a class="form-btn" href="/contact-us/" title="contact us">contact us<span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mobile">
+                                        <div class="popup-menu-body">
+                                            <div class="gigster-table">
+                                                <div class="gigster-table-cell">
+                                                    <div class="gigster-footer">
+                                                        <ul>
+                                                            <li>
+                                                                <img class="footer-logo" src="https://gigster.com/wp-content/themes/gigster/assets/images/gigster_logo.svg" />
+                                                            </li>
+                                                            <li>
+                                                                <ul class="gigster-footer-social-list menu">
+                                                                    <ul id="page-footer-wp-menu" class="menu">
+                                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-57"><a href="https://gigster.com/">Home</a></li>
+                                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-21"><a href="https://gigster.com/about/" aria-current="page">About</a></li>
+                                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://gigster.com/talent/">Talent</a></li>
+                                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://gigster.com/blog/">Blog</a></li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="gigster-footer-social-list">
+                                                                    <li><a target="_blank" href="https://twitter.com/trygigster">Twitter<img src="https://gigster.com/wp-content/themes/gigster/assets/images/social-arrow.svg" /></a></li>
+                                                                    <li><a target="_blank" href="https://www.linkedin.com/company/gigster">LinkedIn<img src="https://gigster.com/wp-content/themes/gigster/assets/images/social-arrow.svg" /></a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="gigster-footer-contact-info">
+                                                                    301 Howard Street
+                                                                    <br /> Suite 2100
+                                                                    <br /> San Francisco, CA 94105
+                                                                    <br /> USA
+                                                                    <br /> +1-833-GIGSTER
+                                                                    <br />
+                                                                    <a href="mailto:info@gigster.com">info@gigster.com</a>
+                                                                    <br />
+                                                                    <br />
+                                                                    <a id="privacy-policy-link" href="privacy">Privacy Policy</a> </div>
+                                                            </li>
+                                                            <li>
+                                                                <a class="form-btn" href="/contact-us/" title="contact us">contact us<span class="dashicons dashicons-arrow-right-alt2"></span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+    <script type='text/javascript' src='/js/jquery.js'></script>
+    <script type='text/javascript' src='/js/jquery.sticky-nav.js'></script>
+    <script type='text/javascript' src='/js/typed.min.js'></script>
+    <script type='text/javascript' src='/js/theme-functions.js?ver=5.3'></script>
 </body>
 </html>

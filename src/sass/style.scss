@@ -1,7 +1,17 @@
-@import 'lib/reset.min';
-@import 'media_queries';
-@import 'colors';
-@import 'typography';
-@import 'base';
-@import 'layout';
-@import 'responsive';
+// @import 'lib/reset.min';
+// @import 'media_queries';
+// @import 'colors';
+// @import 'typography';
+// @import 'base';
+// @import 'layout';
+// @import 'responsive';
+
+@import 'gigstercom/webfonts';
+@import 'gigstercom/reset';
+@import 'gigstercom/common';
+
+@import 'gigstercom/home';
+@import 'gigstercom/about';
+@import 'gigstercom/blog';
+
+

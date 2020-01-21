@@ -1,0 +1,177 @@
+/* Is there real need to prefix css for separate pages if they share most of styling? This should be only on one place, not in all the different stylesheets :( */
+
+.page-blog-body .gigster-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page-blog-body .gigster-header.fixed {
+    background: #007ff5;
+}
+
+.page-blog-body .gigster-section-footer {
+    background: #282a2c;
+    height: 375px;
+    color: #FFF;
+    padding: 40px;
+}
+
+.page-blog-body .gigster-header .form-trigger-btn {
+    width: unset;
+}
+
+.page-blog-body .gigster-section-footer .gigster-table-cell {
+    vertical-align: top;
+}
+
+.page-blog-body .gigster-section-footer .gigster-footer {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    padding: 0;
+}
+
+.page-blog-body .gigster-section-footer .gigster-footer > ul > li:last-child {
+    text-align: right;
+}
+
+.page-blog-body .gigster-section-footer .gigster-section-footer .form-trigger-btn {
+    position: relative;
+    top: unset;
+    right: unset;
+    display: inline-block;
+}
+
+.page-blog-body .gigster-header .form-trigger-btn {
+	white-space: nowrap;
+}
+
+
+
+
+/* Andrej's code starts */
+
+
+
+
+.page-blog-body {
+	background-color: #F4F6FF;
+}
+
+
+.gigster-header {
+	background-color: rgba(0, 46, 255, 1);
+}
+
+.blog-content {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.blog-menu-sidebar {
+
+}
+
+.blog-posts-sidebar {
+
+}
+
+.blog-main {
+
+}
+
+.blog-search {
+	padding: 35px;
+	display: flex;
+	justify-content: middle;
+	align-items: center;
+}
+
+.blog-search input {
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	color: #777;
+	line-height: 25px;
+	padding: 10px 5px;
+	background-color: transparent;
+	border-bottom: 3px solid #00C8FF;
+}
+
+.blog-popular-posts {
+	background-color: #fff;
+	padding: 28px 24px;
+}
+
+.blog-category-nav-title {
+}
+
+.blog-categories__item {
+	padding: 15px 15px 15px 0;
+	text-align: left;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.blog-categories__item a {
+	color: #000000;
+	color: rgba(40, 42, 44, 0.5);
+
+}
+
+.blog-categories__item.main a {
+	font-weight: bold;
+
+}
+
+.blog-categories__item.active,
+.blog-categories__item:hover {
+	border-bottom: 3px solid #00C8FF;
+	font-weight: bold;
+	color: #000;
+
+}
+
+/**
+ * MEDIUM screens 768px and more
+ *
+*/
+@media screen and ( min-width: 768px ) { /* 768px is just arbitrary chosen for now */
+	
+	.page-blog-body .gigster-section {
+		padding: 115px 0 0 0; /* gigster-header height */
+	}
+
+	.blog-content {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.blog-menu-sidebar {
+		order: 1;
+		width: 20%;
+		padding: 0 15px 0 30px;
+
+	}
+
+	.blog-posts-sidebar {
+		order: 3;
+		width: 24%;
+		padding: 0 0 0 15px;
+
+	}
+
+	.blog-main {
+		order: 2;
+		width: 56%;
+		padding: 0 15px;
+
+	}
+
+	.blog-popular-posts {
+		background-color: #fff;
+		padding: 40px 30px;
+	}
+
+}

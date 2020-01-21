@@ -66,7 +66,7 @@ gulp.task('js:build', function() {
   return gulp.src('src/js/**/*.js')
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/js'));
 });
